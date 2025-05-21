@@ -14,6 +14,7 @@ namespace Capstone_Milestone1.Forms
     {
         //Instance Variables
         private FormParent _frmParent;
+        private Panel _fpnl;
         private Combination combination;
         private int _distributionCount = 0;
 
@@ -22,9 +23,14 @@ namespace Capstone_Milestone1.Forms
         {
             InitializeComponent();
             _frmParent = FrmParent;
+            _fpnl = Fpnl2;
         }
 
         //Properties
+        public Panel Fpnl 
+        {
+            get { return _fpnl; }
+        }
 
         //Methods
         private void AddObjectControls(int ObjectCount, FlowLayoutPanel Fpnl)
@@ -167,6 +173,11 @@ namespace Capstone_Milestone1.Forms
                 MessageBox.Show("No more possible distribution");
             }
             
+        }
+
+        private void BtnNext_Click(object sender, EventArgs e)
+        {
+            _frmParent.DisplayForm(_frmParent.FrmUnConsDistAnalysis);
         }
     }
 }

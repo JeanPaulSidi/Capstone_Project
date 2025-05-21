@@ -97,6 +97,9 @@
     <EmbeddedResource Include="Forms\FormParent.resx">
       <DependentUpon>FormParent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUnConstrainedDistributionAnalysis.resx">
+      <DependentUpon>FormUnConstrainedDistributionAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

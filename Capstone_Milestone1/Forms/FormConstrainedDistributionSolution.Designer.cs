@@ -100,6 +100,7 @@
             this.BtnNext.TabIndex = 6;
             this.BtnNext.Text = "Next";
             this.BtnNext.UseVisualStyleBackColor = true;
+            this.BtnNext.Click += new System.EventHandler(this.BtnNext_Click);
             // 
             // BtnPrevious
             // 

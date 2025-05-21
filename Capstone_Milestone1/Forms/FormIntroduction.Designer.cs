@@ -49,7 +49,7 @@
             // 
             this.LblDrawerCount.AutoSize = true;
             this.LblDrawerCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDrawerCount.Location = new System.Drawing.Point(129, 215);
+            this.LblDrawerCount.Location = new System.Drawing.Point(185, 263);
             this.LblDrawerCount.Name = "LblDrawerCount";
             this.LblDrawerCount.Size = new System.Drawing.Size(138, 25);
             this.LblDrawerCount.TabIndex = 1;
@@ -67,7 +67,7 @@
             // CboDrawerCount
             // 
             this.CboDrawerCount.FormattingEnabled = true;
-            this.CboDrawerCount.Location = new System.Drawing.Point(273, 215);
+            this.CboDrawerCount.Location = new System.Drawing.Point(329, 260);
             this.CboDrawerCount.Name = "CboDrawerCount";
             this.CboDrawerCount.Size = new System.Drawing.Size(70, 28);
             this.CboDrawerCount.TabIndex = 3;
@@ -75,7 +75,7 @@
             // 
             // BtnClickToStart
             // 
-            this.BtnClickToStart.Location = new System.Drawing.Point(264, 336);
+            this.BtnClickToStart.Location = new System.Drawing.Point(284, 409);
             this.BtnClickToStart.Name = "BtnClickToStart";
             this.BtnClickToStart.Size = new System.Drawing.Size(215, 51);
             this.BtnClickToStart.TabIndex = 4;
@@ -87,7 +87,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 484);
             this.Controls.Add(this.BtnClickToStart);
             this.Controls.Add(this.CboDrawerCount);
             this.Controls.Add(this.CboObjectCount);

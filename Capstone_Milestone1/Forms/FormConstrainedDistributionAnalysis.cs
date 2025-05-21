@@ -30,7 +30,7 @@ namespace Capstone_Milestone1.Forms
 
 
         //Methods
-        private void CreateLines(int ObjectCount, int DrawerCount) 
+        private void CreateStepLines(int ObjectCount, int DrawerCount) 
         {
             string Line1 = ($"Let's consider the {ObjectCount} objects");
             string Line2 = ($"Let's consider the {ObjectCount - 1} separation bar(s) between the objects");
@@ -103,7 +103,7 @@ namespace Capstone_Milestone1.Forms
             LblTitle.Text = ($"Distribution of {_frmParent.FrmIntro.ObjectCount} objects into {_frmParent.FrmIntro.DrawerCount} drawers.");
             Fpnl.Visible = false;
             AddObjectControls(_frmParent.FrmIntro.ObjectCount);
-            CreateLines(_frmParent.FrmIntro.ObjectCount, _frmParent.FrmIntro.DrawerCount);
+            CreateStepLines(_frmParent.FrmIntro.ObjectCount, _frmParent.FrmIntro.DrawerCount);
             BtnGoToSolution.Visible = false;
         }
 
