@@ -57,9 +57,8 @@
             this.LblSteps.AutoSize = true;
             this.LblSteps.Location = new System.Drawing.Point(215, 356);
             this.LblSteps.Name = "LblSteps";
-            this.LblSteps.Size = new System.Drawing.Size(51, 20);
+            this.LblSteps.Size = new System.Drawing.Size(0, 20);
             this.LblSteps.TabIndex = 2;
-            this.LblSteps.Text = "label1";
             // 
             // BtnPrevious
             // 

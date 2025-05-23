@@ -121,10 +121,6 @@ namespace Capstone_Milestone1.Forms
 
         private void BtnNextStep_Click(object sender, EventArgs e)
         {
-            //Fpnl.Controls.Clear();
-            //GroupPictureBoxes(_frmParent.FrmIntro.ObjectCount);
-            //AddSpace();
-            //GroupTextBoxes(_frmParent.FrmIntro.DrawerCount);
 
             switch (_currentStep) 
             {
