@@ -150,6 +150,9 @@ namespace Capstone_Milestone1.Forms
             AddObjectControls(_frmParent.FrmIntro.ObjectCount, Fpnl1);
             AddObjectControls(_frmParent.FrmIntro.ObjectCount, Fpnl2);
             HideTextboxes(Fpnl2);
+
+            // _frmParent.FrmIntro.ObjectCount - 1 == Separation bars count
+            // _frmParent.FrmIntro.DrawerCount - 1 == number of bars to choose
             combination = new Combination(_frmParent.FrmIntro.ObjectCount - 1, _frmParent.FrmIntro.DrawerCount - 1);
             LblSolution.Text = DisplaySolution();
 
