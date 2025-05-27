@@ -77,9 +77,9 @@
             // 
             // Fpnl2
             // 
-            this.Fpnl2.Location = new System.Drawing.Point(37, 566);
+            this.Fpnl2.Location = new System.Drawing.Point(12, 566);
             this.Fpnl2.Name = "Fpnl2";
-            this.Fpnl2.Size = new System.Drawing.Size(1150, 230);
+            this.Fpnl2.Size = new System.Drawing.Size(1175, 230);
             this.Fpnl2.TabIndex = 4;
             // 
             // BtnVisualisation
