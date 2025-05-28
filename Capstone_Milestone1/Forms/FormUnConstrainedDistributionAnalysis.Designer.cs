@@ -87,6 +87,7 @@
             this.BtnGoToSolution.TabIndex = 5;
             this.BtnGoToSolution.Text = "Go To Solution";
             this.BtnGoToSolution.UseVisualStyleBackColor = true;
+            this.BtnGoToSolution.Click += new System.EventHandler(this.BtnGoToSolution_Click);
             // 
             // FormUnConstrainedDistributionAnalysis
             // 
