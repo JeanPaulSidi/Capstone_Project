@@ -52,7 +52,6 @@
             // 
             // Fpnl1
             // 
-            this.Fpnl1.AutoSize = true;
             this.Fpnl1.Location = new System.Drawing.Point(3, 62);
             this.Fpnl1.Name = "Fpnl1";
             this.Fpnl1.Size = new System.Drawing.Size(1150, 230);
