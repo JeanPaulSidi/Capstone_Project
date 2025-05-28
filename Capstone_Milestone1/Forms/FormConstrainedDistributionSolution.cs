@@ -15,7 +15,7 @@ namespace Capstone_Milestone1.Forms
         //Instance Variables
         private FormParent _frmParent;
         private Panel _fpnl;
-        private Combination combination;
+        private Combination _combination;
         private int _distributionCount = 0;
 
         //Constructor
@@ -99,7 +99,7 @@ namespace Capstone_Milestone1.Forms
 
         private string DisplaySolution() 
         {
-            int CombinationCount = combination.CombinationCount;
+            int CombinationCount = _combination.CombinationCount;
             int ObjectCount = _frmParent.FrmIntro.ObjectCount;
             int DrawerCount = _frmParent.FrmIntro.DrawerCount;
 
@@ -150,14 +150,14 @@ namespace Capstone_Milestone1.Forms
             AddObjectControls(_frmParent.FrmIntro.ObjectCount, Fpnl1);
             AddObjectControls(_frmParent.FrmIntro.ObjectCount, Fpnl2);
             HideTextboxes(Fpnl2);
-            combination = new Combination(_frmParent.FrmIntro.ObjectCount - 1, _frmParent.FrmIntro.DrawerCount - 1);
+            _combination = new Combination(_frmParent.FrmIntro.ObjectCount - 1, _frmParent.FrmIntro.DrawerCount - 1);
             LblSolution.Text = DisplaySolution();
 
         }
 
         private void BtnVisualisation_Click(object sender, EventArgs e)
         {
-            var randomCombination = combination.GetCombination();
+            var randomCombination = _combination.GetCombination();
 
             if (randomCombination != null) 
             {

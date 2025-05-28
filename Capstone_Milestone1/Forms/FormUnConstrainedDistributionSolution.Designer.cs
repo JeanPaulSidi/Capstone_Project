@@ -34,6 +34,9 @@
             this.LblDistributionCount = new System.Windows.Forms.Label();
             this.LblDistribution = new System.Windows.Forms.Label();
             this.LblDistributionDetails = new System.Windows.Forms.Label();
+            this.BtnVisualisation = new System.Windows.Forms.Button();
+            this.BtnPrevious = new System.Windows.Forms.Button();
+            this.BtnNext = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblTitle
@@ -41,9 +44,9 @@
             this.LblTitle.AutoSize = true;
             this.LblTitle.Location = new System.Drawing.Point(125, 13);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(51, 20);
+            this.LblTitle.Size = new System.Drawing.Size(71, 20);
             this.LblTitle.TabIndex = 0;
-            this.LblTitle.Text = "label1";
+            this.LblTitle.Text = "Solution:";
             // 
             // LblSolution
             // 
@@ -68,9 +71,8 @@
             this.LblDistributionCount.AutoSize = true;
             this.LblDistributionCount.Location = new System.Drawing.Point(214, 528);
             this.LblDistributionCount.Name = "LblDistributionCount";
-            this.LblDistributionCount.Size = new System.Drawing.Size(51, 20);
+            this.LblDistributionCount.Size = new System.Drawing.Size(0, 20);
             this.LblDistributionCount.TabIndex = 3;
-            this.LblDistributionCount.Text = "label1";
             // 
             // LblDistribution
             // 
@@ -86,15 +88,45 @@
             this.LblDistributionDetails.AutoSize = true;
             this.LblDistributionDetails.Location = new System.Drawing.Point(180, 601);
             this.LblDistributionDetails.Name = "LblDistributionDetails";
-            this.LblDistributionDetails.Size = new System.Drawing.Size(51, 20);
+            this.LblDistributionDetails.Size = new System.Drawing.Size(0, 20);
             this.LblDistributionDetails.TabIndex = 5;
-            this.LblDistributionDetails.Text = "label1";
+            // 
+            // BtnVisualisation
+            // 
+            this.BtnVisualisation.Location = new System.Drawing.Point(432, 799);
+            this.BtnVisualisation.Name = "BtnVisualisation";
+            this.BtnVisualisation.Size = new System.Drawing.Size(145, 50);
+            this.BtnVisualisation.TabIndex = 6;
+            this.BtnVisualisation.Text = "Click to Visualize";
+            this.BtnVisualisation.UseVisualStyleBackColor = true;
+            this.BtnVisualisation.Click += new System.EventHandler(this.BtnVisualisation_Click);
+            // 
+            // BtnPrevious
+            // 
+            this.BtnPrevious.Location = new System.Drawing.Point(129, 799);
+            this.BtnPrevious.Name = "BtnPrevious";
+            this.BtnPrevious.Size = new System.Drawing.Size(112, 50);
+            this.BtnPrevious.TabIndex = 7;
+            this.BtnPrevious.Text = "Previous";
+            this.BtnPrevious.UseVisualStyleBackColor = true;
+            // 
+            // BtnNext
+            // 
+            this.BtnNext.Location = new System.Drawing.Point(738, 799);
+            this.BtnNext.Name = "BtnNext";
+            this.BtnNext.Size = new System.Drawing.Size(103, 50);
+            this.BtnNext.TabIndex = 8;
+            this.BtnNext.Text = "Next";
+            this.BtnNext.UseVisualStyleBackColor = true;
             // 
             // FormUnConstrainedDistributionSolution
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(960, 712);
+            this.ClientSize = new System.Drawing.Size(1025, 873);
+            this.Controls.Add(this.BtnNext);
+            this.Controls.Add(this.BtnPrevious);
+            this.Controls.Add(this.BtnVisualisation);
             this.Controls.Add(this.LblDistributionDetails);
             this.Controls.Add(this.LblDistribution);
             this.Controls.Add(this.LblDistributionCount);
@@ -104,6 +136,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormUnConstrainedDistributionSolution";
             this.Text = "FormUnConstrainedDistributionSolution";
+            this.Load += new System.EventHandler(this.FormUnConstrainedDistributionSolution_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,5 +150,8 @@
         private System.Windows.Forms.Label LblDistributionCount;
         private System.Windows.Forms.Label LblDistribution;
         private System.Windows.Forms.Label LblDistributionDetails;
+        private System.Windows.Forms.Button BtnVisualisation;
+        private System.Windows.Forms.Button BtnPrevious;
+        private System.Windows.Forms.Button BtnNext;
     }
 }
