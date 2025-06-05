@@ -37,6 +37,7 @@
             this.BtnVisualisation = new System.Windows.Forms.Button();
             this.BtnPrevious = new System.Windows.Forms.Button();
             this.BtnNext = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // LblTitle
@@ -93,7 +94,7 @@
             // 
             // BtnVisualisation
             // 
-            this.BtnVisualisation.Location = new System.Drawing.Point(432, 799);
+            this.BtnVisualisation.Location = new System.Drawing.Point(729, 879);
             this.BtnVisualisation.Name = "BtnVisualisation";
             this.BtnVisualisation.Size = new System.Drawing.Size(145, 50);
             this.BtnVisualisation.TabIndex = 6;
@@ -103,7 +104,7 @@
             // 
             // BtnPrevious
             // 
-            this.BtnPrevious.Location = new System.Drawing.Point(129, 799);
+            this.BtnPrevious.Location = new System.Drawing.Point(476, 879);
             this.BtnPrevious.Name = "BtnPrevious";
             this.BtnPrevious.Size = new System.Drawing.Size(112, 50);
             this.BtnPrevious.TabIndex = 7;
@@ -112,18 +113,27 @@
             // 
             // BtnNext
             // 
-            this.BtnNext.Location = new System.Drawing.Point(738, 799);
+            this.BtnNext.Location = new System.Drawing.Point(1037, 879);
             this.BtnNext.Name = "BtnNext";
             this.BtnNext.Size = new System.Drawing.Size(103, 50);
             this.BtnNext.TabIndex = 8;
             this.BtnNext.Text = "Next";
             this.BtnNext.UseVisualStyleBackColor = true;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoSize = true;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(31, 668);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel1.TabIndex = 9;
+            // 
             // FormUnConstrainedDistributionSolution
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1025, 873);
+            this.ClientSize = new System.Drawing.Size(1338, 966);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.BtnNext);
             this.Controls.Add(this.BtnPrevious);
             this.Controls.Add(this.BtnVisualisation);
@@ -153,5 +163,6 @@
         private System.Windows.Forms.Button BtnVisualisation;
         private System.Windows.Forms.Button BtnPrevious;
         private System.Windows.Forms.Button BtnNext;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

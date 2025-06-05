@@ -12,6 +12,12 @@ namespace Capstone_Milestone1.Forms
 {
     public partial class FormUnConstrainedDistributionSolution : Form
     {
+        private const string Emoji = "🟣";
+        private Queue<TextBox> textBoxQueue = new Queue<TextBox>(); // Queue to control sequential animation
+        private Timer animationTimer;
+        private int currentEmojiCount = 0;
+        private TextBox currentTextBox;
+
         //Instance Variables
         private FormParent _frmParent;
         private Combination _combination;
@@ -155,21 +161,116 @@ namespace Capstone_Milestone1.Forms
 
         private void BtnVisualisation_Click(object sender, EventArgs e)
         {
+            BtnVisualisation.Enabled = false;
             ResetObjectControls();
 
             var randomCombination = _combination.GetCombination();
 
-            if (randomCombination != null) 
+            if (randomCombination != null)
             {
                 ReplaceSelectedObjectControls(randomCombination);
                 _distributionCount++;
                 LblDistributionCount.Text = _distributionCount.ToString();
                 List<int> Distribution = GetDistribution(randomCombination.ToList());
                 DisplayDistribution(Distribution, LblDistributionDetails);
+                //
+
+                flowLayoutPanel1.Controls.Clear();
+                CreateDrawers(Distribution, flowLayoutPanel1);
             }
-            else 
+            else
             {
                 MessageBox.Show("No more possible distribution");
+            }
+        }
+
+        private void CreateDrawers(List<int> distribution, FlowLayoutPanel panel)
+        {
+            panel.Controls.Clear(); // Clear previous controls
+
+            for (int i = 0; i < distribution.Count; i++)
+            {
+                // Create Label
+                Label drawerLabel = new Label
+                {
+                    Text = $"Drawer {i + 1}",
+                    AutoSize = true,
+                    TextAlign = ContentAlignment.MiddleCenter
+                };
+
+                // Create TextBox
+                TextBox drawerTextbox = new TextBox
+                {
+                    Name = $"drawer{i + 1}",
+                    Size = new Size(100, 60),
+                    TextAlign = HorizontalAlignment.Center,
+                    BackColor = Color.LightBlue,
+                    ReadOnly = true,
+                    Font = new Font("Segoe UI Emoji", 10),
+                    Multiline = true,
+                    Tag = distribution[i] // Store emoji count in Tag
+                };
+
+                // Wrap in a FlowLayoutPanel for vertical stacking
+                FlowLayoutPanel wrapperPanel = new FlowLayoutPanel
+                {
+                    FlowDirection = FlowDirection.TopDown,
+                    AutoSize = true,
+                    Margin = new Padding(10)
+                };
+
+                wrapperPanel.Controls.Add(drawerLabel);
+                wrapperPanel.Controls.Add(drawerTextbox);
+                panel.Controls.Add(wrapperPanel);
+
+                // Add to queue for sequential animation
+                textBoxQueue.Enqueue(drawerTextbox);
+            }
+
+            // Start sequential animation
+            AnimateNextTextBox();
+        }
+
+        private void AnimateNextTextBox()
+        {
+            if (textBoxQueue.Count > 0)
+            {
+                currentTextBox = textBoxQueue.Dequeue();
+                currentEmojiCount = 0;
+
+                animationTimer = new Timer
+                {
+                    Interval = 300 // Adjust speed (milliseconds)
+                };
+
+                animationTimer.Tick += AnimationTick;
+                animationTimer.Start();
+            }
+            else
+            {
+                BtnVisualisation.Enabled = true;
+            }
+        }
+
+        private void AnimationTick(object sender, EventArgs e)
+        {
+            if (currentTextBox != null)
+            {
+                int emojiLimit = Convert.ToInt32(currentTextBox.Tag);
+
+                if (currentEmojiCount < emojiLimit)
+                {
+                    currentTextBox.AppendText($"{Emoji} "); // Append emoji dynamically
+                    currentEmojiCount++;
+                }
+                else
+                {
+                    animationTimer.Stop();
+                    animationTimer.Dispose();
+
+                    // Start animation for the next TextBox
+                    AnimateNextTextBox();
+                }
             }
         }
     }
