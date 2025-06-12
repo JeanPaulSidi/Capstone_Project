@@ -100,6 +100,7 @@ namespace Capstone_Milestone1.Forms
 
         private void FormConstrainedDistributionAnalysis_Load(object sender, EventArgs e)
         {
+            BtnNext.Visible = false;
             LblTitle.Text = ($"Distribution of {_frmParent.FrmIntro.ObjectCount} objects into {_frmParent.FrmIntro.DrawerCount} drawers.");
             Fpnl.Visible = false;
             AddObjectControls(_frmParent.FrmIntro.ObjectCount);
@@ -140,6 +141,17 @@ namespace Capstone_Milestone1.Forms
         private void BtnGoToSolution_Click(object sender, EventArgs e)
         {
             _frmParent.DisplayForm(_frmParent.FrmConsDistSolution);
+            BtnNext.Visible = true;
+        }
+
+        private void BtnNext_Click(object sender, EventArgs e)
+        {
+            _frmParent.DisplayForm(_frmParent.FrmConsDistSolution);
+        }
+
+        private void BtnGoToSetup_Click(object sender, EventArgs e)
+        {
+            _frmParent.DisplayForm(_frmParent.FrmIntro);
         }
     }
 }

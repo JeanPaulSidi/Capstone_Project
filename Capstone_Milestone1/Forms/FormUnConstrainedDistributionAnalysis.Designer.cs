@@ -34,6 +34,7 @@
             this.BtnPrevious = new System.Windows.Forms.Button();
             this.BtnNextStep = new System.Windows.Forms.Button();
             this.BtnGoToSolution = new System.Windows.Forms.Button();
+            this.BtnNext = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblTitle
@@ -68,6 +69,7 @@
             this.BtnPrevious.TabIndex = 3;
             this.BtnPrevious.Text = "Previous";
             this.BtnPrevious.UseVisualStyleBackColor = true;
+            this.BtnPrevious.Click += new System.EventHandler(this.BtnPrevious_Click);
             // 
             // BtnNextStep
             // 
@@ -89,11 +91,22 @@
             this.BtnGoToSolution.UseVisualStyleBackColor = true;
             this.BtnGoToSolution.Click += new System.EventHandler(this.BtnGoToSolution_Click);
             // 
+            // BtnNext
+            // 
+            this.BtnNext.Location = new System.Drawing.Point(883, 625);
+            this.BtnNext.Name = "BtnNext";
+            this.BtnNext.Size = new System.Drawing.Size(177, 51);
+            this.BtnNext.TabIndex = 6;
+            this.BtnNext.Text = "Next";
+            this.BtnNext.UseVisualStyleBackColor = true;
+            this.BtnNext.Click += new System.EventHandler(this.BtnNext_Click);
+            // 
             // FormUnConstrainedDistributionAnalysis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1205, 700);
+            this.Controls.Add(this.BtnNext);
             this.Controls.Add(this.BtnGoToSolution);
             this.Controls.Add(this.BtnNextStep);
             this.Controls.Add(this.BtnPrevious);
@@ -117,5 +130,6 @@
         private System.Windows.Forms.Button BtnPrevious;
         private System.Windows.Forms.Button BtnNextStep;
         private System.Windows.Forms.Button BtnGoToSolution;
+        private System.Windows.Forms.Button BtnNext;
     }
 }

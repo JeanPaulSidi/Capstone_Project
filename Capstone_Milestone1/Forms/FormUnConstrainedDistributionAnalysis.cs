@@ -113,6 +113,7 @@ namespace Capstone_Milestone1.Forms
 
         private void FormUnConstrainedDistributionAnalysis_Load(object sender, EventArgs e)
         {
+            BtnNext.Visible = false;
             LblTitle.Text = ($"Distribution of {_frmParent.FrmIntro.ObjectCount} objects into {_frmParent.FrmIntro.DrawerCount} drawers.");
             CreateStepLines(_frmParent.FrmIntro.ObjectCount, _frmParent.FrmIntro.DrawerCount);
             Fpnl.Controls.Add(_frmParent.FrmConsDistSolution.Fpnl);
@@ -148,6 +149,17 @@ namespace Capstone_Milestone1.Forms
         }
 
         private void BtnGoToSolution_Click(object sender, EventArgs e)
+        {
+            _frmParent.DisplayForm(_frmParent.FrmUnConsDistSolution);
+            BtnNext.Visible = true;
+        }
+
+        private void BtnPrevious_Click(object sender, EventArgs e)
+        {
+            _frmParent.DisplayForm(_frmParent.FrmConsDistSolution);
+        }
+
+        private void BtnNext_Click(object sender, EventArgs e)
         {
             _frmParent.DisplayForm(_frmParent.FrmUnConsDistSolution);
         }

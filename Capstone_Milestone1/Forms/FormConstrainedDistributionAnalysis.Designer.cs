@@ -34,6 +34,8 @@
             this.BtnNextStep = new System.Windows.Forms.Button();
             this.BtnPrevious = new System.Windows.Forms.Button();
             this.LblSteps = new System.Windows.Forms.Label();
+            this.BtnNext = new System.Windows.Forms.Button();
+            this.BtnGoToSetup = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblTitle
@@ -91,11 +93,33 @@
             this.LblSteps.Size = new System.Drawing.Size(0, 20);
             this.LblSteps.TabIndex = 7;
             // 
+            // BtnNext
+            // 
+            this.BtnNext.Location = new System.Drawing.Point(771, 609);
+            this.BtnNext.Name = "BtnNext";
+            this.BtnNext.Size = new System.Drawing.Size(143, 44);
+            this.BtnNext.TabIndex = 8;
+            this.BtnNext.Text = "Next";
+            this.BtnNext.UseVisualStyleBackColor = true;
+            this.BtnNext.Click += new System.EventHandler(this.BtnNext_Click);
+            // 
+            // BtnGoToSetup
+            // 
+            this.BtnGoToSetup.Location = new System.Drawing.Point(471, 523);
+            this.BtnGoToSetup.Name = "BtnGoToSetup";
+            this.BtnGoToSetup.Size = new System.Drawing.Size(117, 54);
+            this.BtnGoToSetup.TabIndex = 9;
+            this.BtnGoToSetup.Text = "Go To Setup";
+            this.BtnGoToSetup.UseVisualStyleBackColor = true;
+            this.BtnGoToSetup.Click += new System.EventHandler(this.BtnGoToSetup_Click);
+            // 
             // FormConstrainedDistributionAnalysis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1177, 822);
+            this.Controls.Add(this.BtnGoToSetup);
+            this.Controls.Add(this.BtnNext);
             this.Controls.Add(this.LblSteps);
             this.Controls.Add(this.BtnPrevious);
             this.Controls.Add(this.BtnNextStep);
@@ -119,5 +143,7 @@
         private System.Windows.Forms.Button BtnNextStep;
         private System.Windows.Forms.Button BtnPrevious;
         private System.Windows.Forms.Label LblSteps;
+        private System.Windows.Forms.Button BtnNext;
+        private System.Windows.Forms.Button BtnGoToSetup;
     }
 }

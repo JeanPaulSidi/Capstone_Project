@@ -33,6 +33,9 @@
             this.CboObjectCount = new System.Windows.Forms.ComboBox();
             this.CboDrawerCount = new System.Windows.Forms.ComboBox();
             this.BtnClickToStart = new System.Windows.Forms.Button();
+            this.LblSetup = new System.Windows.Forms.Label();
+            this.BtnReset = new System.Windows.Forms.Button();
+            this.BtnNext = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblObjectCount
@@ -83,11 +86,42 @@
             this.BtnClickToStart.UseVisualStyleBackColor = true;
             this.BtnClickToStart.Click += new System.EventHandler(this.BtnClickToStart_Click);
             // 
+            // LblSetup
+            // 
+            this.LblSetup.AutoSize = true;
+            this.LblSetup.Location = new System.Drawing.Point(347, 21);
+            this.LblSetup.Name = "LblSetup";
+            this.LblSetup.Size = new System.Drawing.Size(62, 20);
+            this.LblSetup.TabIndex = 5;
+            this.LblSetup.Text = "SETUP";
+            // 
+            // BtnReset
+            // 
+            this.BtnReset.Location = new System.Drawing.Point(284, 409);
+            this.BtnReset.Name = "BtnReset";
+            this.BtnReset.Size = new System.Drawing.Size(215, 51);
+            this.BtnReset.TabIndex = 6;
+            this.BtnReset.Text = "Reset";
+            this.BtnReset.UseVisualStyleBackColor = true;
+            // 
+            // BtnNext
+            // 
+            this.BtnNext.Location = new System.Drawing.Point(640, 409);
+            this.BtnNext.Name = "BtnNext";
+            this.BtnNext.Size = new System.Drawing.Size(168, 51);
+            this.BtnNext.TabIndex = 7;
+            this.BtnNext.Text = "Next";
+            this.BtnNext.UseVisualStyleBackColor = true;
+            this.BtnNext.Click += new System.EventHandler(this.BtnNext_Click);
+            // 
             // FormIntroduction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 484);
+            this.ClientSize = new System.Drawing.Size(962, 484);
+            this.Controls.Add(this.BtnNext);
+            this.Controls.Add(this.BtnReset);
+            this.Controls.Add(this.LblSetup);
             this.Controls.Add(this.BtnClickToStart);
             this.Controls.Add(this.CboDrawerCount);
             this.Controls.Add(this.CboObjectCount);
@@ -109,5 +143,8 @@
         private System.Windows.Forms.ComboBox CboObjectCount;
         private System.Windows.Forms.ComboBox CboDrawerCount;
         private System.Windows.Forms.Button BtnClickToStart;
+        private System.Windows.Forms.Label LblSetup;
+        private System.Windows.Forms.Button BtnReset;
+        private System.Windows.Forms.Button BtnNext;
     }
 }
