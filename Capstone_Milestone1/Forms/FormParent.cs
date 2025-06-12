@@ -22,6 +22,11 @@ namespace Capstone_Milestone1.Forms
         private FormUnConstrainedDistributionSolution _frmUnConsDistSolution;
         private Panel _panel;
 
+        private FormIntroduction2 _frmIntroduction2;
+        private FormAnalysis2 _frmAnalysis2;
+        private FormSolution2 _frmSolution2;
+        private FormHome _frmHome;
+
         //Contructor
         public FormParent()
         {
@@ -51,6 +56,25 @@ namespace Capstone_Milestone1.Forms
         {
             get { return _frmUnConsDistSolution;}
         }
+
+        //
+        public FormHome FrmHome 
+        {
+            get { return _frmHome; }
+        }
+        public FormIntroduction2 FrmIntroduction2 
+        {
+            get { return _frmIntroduction2; }
+        }
+        public FormAnalysis2 FrmAnalysis2 
+        {
+            get { return _frmAnalysis2; }
+        }
+        public FormSolution2 FrmSolution2 
+        {
+            get { return _frmSolution2; }
+        }
+
         public Panel Pnl 
         {
             get { return _panel; }
@@ -64,6 +88,12 @@ namespace Capstone_Milestone1.Forms
             _frmConsDistSolution = new FormConstrainedDistributionSolution(this);
             _frmUnConsDistAnalysis = new FormUnConstrainedDistributionAnalysis(this);
             _frmUnConsDistSolution = new FormUnConstrainedDistributionSolution(this);
+
+            _frmIntroduction2 = new FormIntroduction2(this);
+            _frmAnalysis2 = new FormAnalysis2(this);
+            _frmSolution2 = new FormSolution2(this);
+            _frmHome = new FormHome(this);
+
             _panel = Panel;
         }
 
