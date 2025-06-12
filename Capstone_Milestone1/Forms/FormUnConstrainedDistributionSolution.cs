@@ -273,5 +273,10 @@ namespace Capstone_Milestone1.Forms
                 }
             }
         }
+
+        private void BtnPrevious_Click(object sender, EventArgs e)
+        {
+            _frmParent.DisplayForm(_frmParent.FrmUnConsDistAnalysis);
+        }
     }
 }
