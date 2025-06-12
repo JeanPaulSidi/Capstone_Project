@@ -133,11 +133,6 @@ namespace Capstone_Milestone1.Forms
             }
         }
 
-        private void BtnPrevious_Click(object sender, EventArgs e)
-        {
-            _frmParent.DisplayForm(_frmParent.FrmIntro);
-        }
-
         private void BtnGoToSolution_Click(object sender, EventArgs e)
         {
             _frmParent.DisplayForm(_frmParent.FrmConsDistSolution);

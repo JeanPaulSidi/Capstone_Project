@@ -32,7 +32,6 @@
             this.Fpnl = new System.Windows.Forms.FlowLayoutPanel();
             this.BtnGoToSolution = new System.Windows.Forms.Button();
             this.BtnNextStep = new System.Windows.Forms.Button();
-            this.BtnPrevious = new System.Windows.Forms.Button();
             this.LblSteps = new System.Windows.Forms.Label();
             this.BtnNext = new System.Windows.Forms.Button();
             this.BtnGoToSetup = new System.Windows.Forms.Button();
@@ -75,16 +74,6 @@
             this.BtnNextStep.UseVisualStyleBackColor = true;
             this.BtnNextStep.Click += new System.EventHandler(this.BtnNextStep_Click);
             // 
-            // BtnPrevious
-            // 
-            this.BtnPrevious.Location = new System.Drawing.Point(146, 609);
-            this.BtnPrevious.Name = "BtnPrevious";
-            this.BtnPrevious.Size = new System.Drawing.Size(123, 44);
-            this.BtnPrevious.TabIndex = 6;
-            this.BtnPrevious.Text = "Previous";
-            this.BtnPrevious.UseVisualStyleBackColor = true;
-            this.BtnPrevious.Click += new System.EventHandler(this.BtnPrevious_Click);
-            // 
             // LblSteps
             // 
             this.LblSteps.AutoSize = true;
@@ -105,7 +94,7 @@
             // 
             // BtnGoToSetup
             // 
-            this.BtnGoToSetup.Location = new System.Drawing.Point(471, 523);
+            this.BtnGoToSetup.Location = new System.Drawing.Point(160, 609);
             this.BtnGoToSetup.Name = "BtnGoToSetup";
             this.BtnGoToSetup.Size = new System.Drawing.Size(117, 54);
             this.BtnGoToSetup.TabIndex = 9;
@@ -121,7 +110,6 @@
             this.Controls.Add(this.BtnGoToSetup);
             this.Controls.Add(this.BtnNext);
             this.Controls.Add(this.LblSteps);
-            this.Controls.Add(this.BtnPrevious);
             this.Controls.Add(this.BtnNextStep);
             this.Controls.Add(this.BtnGoToSolution);
             this.Controls.Add(this.Fpnl);
@@ -141,7 +129,6 @@
         private System.Windows.Forms.FlowLayoutPanel Fpnl;
         private System.Windows.Forms.Button BtnGoToSolution;
         private System.Windows.Forms.Button BtnNextStep;
-        private System.Windows.Forms.Button BtnPrevious;
         private System.Windows.Forms.Label LblSteps;
         private System.Windows.Forms.Button BtnNext;
         private System.Windows.Forms.Button BtnGoToSetup;
