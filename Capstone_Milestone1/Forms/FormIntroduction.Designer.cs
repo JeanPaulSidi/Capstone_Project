@@ -32,7 +32,7 @@
             this.LblDrawerCount = new System.Windows.Forms.Label();
             this.CboObjectCount = new System.Windows.Forms.ComboBox();
             this.CboDrawerCount = new System.Windows.Forms.ComboBox();
-            this.BtnClickToStart = new System.Windows.Forms.Button();
+            this.BtnStart = new System.Windows.Forms.Button();
             this.LblSetup = new System.Windows.Forms.Label();
             this.BtnReset = new System.Windows.Forms.Button();
             this.BtnNext = new System.Windows.Forms.Button();
@@ -77,15 +77,15 @@
             this.CboDrawerCount.TabIndex = 3;
             this.CboDrawerCount.SelectedIndexChanged += new System.EventHandler(this.CboDrawerCount_SelectedIndexChanged);
             // 
-            // BtnClickToStart
+            // BtnStart
             // 
-            this.BtnClickToStart.Location = new System.Drawing.Point(476, 520);
-            this.BtnClickToStart.Name = "BtnClickToStart";
-            this.BtnClickToStart.Size = new System.Drawing.Size(215, 51);
-            this.BtnClickToStart.TabIndex = 4;
-            this.BtnClickToStart.Text = "Click To Start";
-            this.BtnClickToStart.UseVisualStyleBackColor = true;
-            this.BtnClickToStart.Click += new System.EventHandler(this.BtnClickToStart_Click);
+            this.BtnStart.Location = new System.Drawing.Point(476, 520);
+            this.BtnStart.Name = "BtnStart";
+            this.BtnStart.Size = new System.Drawing.Size(215, 51);
+            this.BtnStart.TabIndex = 4;
+            this.BtnStart.Text = "Start";
+            this.BtnStart.UseVisualStyleBackColor = true;
+            this.BtnStart.Click += new System.EventHandler(this.BtnStart_Click);
             // 
             // LblSetup
             // 
@@ -98,7 +98,7 @@
             // 
             // BtnReset
             // 
-            this.BtnReset.Location = new System.Drawing.Point(476, 520);
+            this.BtnReset.Location = new System.Drawing.Point(476, 463);
             this.BtnReset.Name = "BtnReset";
             this.BtnReset.Size = new System.Drawing.Size(215, 51);
             this.BtnReset.TabIndex = 6;
@@ -134,7 +134,7 @@
             this.Controls.Add(this.BtnNext);
             this.Controls.Add(this.BtnReset);
             this.Controls.Add(this.LblSetup);
-            this.Controls.Add(this.BtnClickToStart);
+            this.Controls.Add(this.BtnStart);
             this.Controls.Add(this.CboDrawerCount);
             this.Controls.Add(this.CboObjectCount);
             this.Controls.Add(this.LblDrawerCount);
@@ -154,7 +154,7 @@
         private System.Windows.Forms.Label LblDrawerCount;
         private System.Windows.Forms.ComboBox CboObjectCount;
         private System.Windows.Forms.ComboBox CboDrawerCount;
-        private System.Windows.Forms.Button BtnClickToStart;
+        private System.Windows.Forms.Button BtnStart;
         private System.Windows.Forms.Label LblSetup;
         private System.Windows.Forms.Button BtnReset;
         private System.Windows.Forms.Button BtnNext;
