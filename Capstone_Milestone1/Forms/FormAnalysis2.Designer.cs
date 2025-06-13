@@ -28,20 +28,116 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
+            this.LblSteps = new System.Windows.Forms.Label();
+            this.BtnNextStep = new System.Windows.Forms.Button();
+            this.BtnNext = new System.Windows.Forms.Button();
+            this.BtnGoToSetup = new System.Windows.Forms.Button();
+            this.BtnGoHome = new System.Windows.Forms.Button();
+            this.Fpnl1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.Fpnl2 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(277, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
+            // 
+            // LblSteps
+            // 
+            this.LblSteps.AutoSize = true;
+            this.LblSteps.Location = new System.Drawing.Point(120, 578);
+            this.LblSteps.Name = "LblSteps";
+            this.LblSteps.Size = new System.Drawing.Size(55, 20);
+            this.LblSteps.TabIndex = 3;
+            this.LblSteps.Text = "Steps:";
+            // 
+            // BtnNextStep
+            // 
+            this.BtnNextStep.Location = new System.Drawing.Point(653, 908);
+            this.BtnNextStep.Name = "BtnNextStep";
+            this.BtnNextStep.Size = new System.Drawing.Size(136, 45);
+            this.BtnNextStep.TabIndex = 4;
+            this.BtnNextStep.Text = "Next Step";
+            this.BtnNextStep.UseVisualStyleBackColor = true;
+            // 
+            // BtnNext
+            // 
+            this.BtnNext.Location = new System.Drawing.Point(919, 908);
+            this.BtnNext.Name = "BtnNext";
+            this.BtnNext.Size = new System.Drawing.Size(159, 45);
+            this.BtnNext.TabIndex = 5;
+            this.BtnNext.Text = "Next";
+            this.BtnNext.UseVisualStyleBackColor = true;
+            // 
+            // BtnGoToSetup
+            // 
+            this.BtnGoToSetup.Location = new System.Drawing.Point(411, 908);
+            this.BtnGoToSetup.Name = "BtnGoToSetup";
+            this.BtnGoToSetup.Size = new System.Drawing.Size(111, 42);
+            this.BtnGoToSetup.TabIndex = 6;
+            this.BtnGoToSetup.Text = "Go To Setup";
+            this.BtnGoToSetup.UseVisualStyleBackColor = true;
+            // 
+            // BtnGoHome
+            // 
+            this.BtnGoHome.Location = new System.Drawing.Point(168, 908);
+            this.BtnGoHome.Name = "BtnGoHome";
+            this.BtnGoHome.Size = new System.Drawing.Size(104, 42);
+            this.BtnGoHome.TabIndex = 7;
+            this.BtnGoHome.Text = "Home";
+            this.BtnGoHome.UseVisualStyleBackColor = true;
+            // 
+            // Fpnl1
+            // 
+            this.Fpnl1.AutoSize = true;
+            this.Fpnl1.Location = new System.Drawing.Point(13, 80);
+            this.Fpnl1.Name = "Fpnl1";
+            this.Fpnl1.Size = new System.Drawing.Size(1000, 200);
+            this.Fpnl1.TabIndex = 9;
+            // 
+            // Fpnl2
+            // 
+            this.Fpnl2.AutoSize = true;
+            this.Fpnl2.Location = new System.Drawing.Point(13, 312);
+            this.Fpnl2.Name = "Fpnl2";
+            this.Fpnl2.Size = new System.Drawing.Size(1000, 200);
+            this.Fpnl2.TabIndex = 10;
             // 
             // FormAnalysis2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1216, 988);
+            this.Controls.Add(this.Fpnl2);
+            this.Controls.Add(this.Fpnl1);
+            this.Controls.Add(this.BtnGoHome);
+            this.Controls.Add(this.BtnGoToSetup);
+            this.Controls.Add(this.BtnNext);
+            this.Controls.Add(this.BtnNextStep);
+            this.Controls.Add(this.LblSteps);
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAnalysis2";
             this.Text = "FormAnalysis2";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LblSteps;
+        private System.Windows.Forms.Button BtnNextStep;
+        private System.Windows.Forms.Button BtnNext;
+        private System.Windows.Forms.Button BtnGoToSetup;
+        private System.Windows.Forms.Button BtnGoHome;
+        private System.Windows.Forms.FlowLayoutPanel Fpnl1;
+        private System.Windows.Forms.FlowLayoutPanel Fpnl2;
     }
 }
