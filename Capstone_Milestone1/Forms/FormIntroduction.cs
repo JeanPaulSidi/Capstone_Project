@@ -57,6 +57,7 @@ namespace Capstone_Milestone1.Forms
             BtnNext.Visible = false;
             BtnReset.Enabled = false;
 
+
             CboObjectCount.DataSource = PopulateComboBox(_objectCountMin, _objectCountMax);
             CboObjectCount.Text = string.Empty;
             CboDrawerCount.DataSource = null;
@@ -107,6 +108,11 @@ namespace Capstone_Milestone1.Forms
         private void BtnNext_Click(object sender, EventArgs e)
         {
             _frmParent.DisplayForm(_frmParent.FrmConsDistAnalysis);
+        }
+
+        private void BtnGoHome_Click(object sender, EventArgs e)
+        {
+            _frmParent.DisplayForm(_frmParent.FrmHome);
         }
     }
 }

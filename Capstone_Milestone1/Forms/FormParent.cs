@@ -108,7 +108,8 @@ namespace Capstone_Milestone1.Forms
 
         private void FormParent_Load(object sender, EventArgs e)
         {
-            DisplayForm(_frmIntro);
+            //DisplayForm(_frmIntro);
+            DisplayForm(_frmHome);
         }
     }
 }
