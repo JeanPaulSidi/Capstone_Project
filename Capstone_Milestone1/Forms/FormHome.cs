@@ -20,5 +20,15 @@ namespace Capstone_Milestone1.Forms
             InitializeComponent();
             _frmParent = FrmParent;
         }
+
+        private void BtnSelectIndistinguishable_Click(object sender, EventArgs e)
+        {
+            _frmParent.DisplayForm(_frmParent.FrmIntro);
+        }
+
+        private void BtnSelectDistinguishable_Click(object sender, EventArgs e)
+        {
+            _frmParent.DisplayForm(_frmParent.FrmIntroduction2);
+        }
     }
 }

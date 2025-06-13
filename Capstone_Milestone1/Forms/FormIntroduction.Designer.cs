@@ -36,13 +36,14 @@
             this.LblSetup = new System.Windows.Forms.Label();
             this.BtnReset = new System.Windows.Forms.Button();
             this.BtnNext = new System.Windows.Forms.Button();
+            this.BtnGoHome = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblObjectCount
             // 
             this.LblObjectCount.AutoSize = true;
             this.LblObjectCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblObjectCount.Location = new System.Drawing.Point(45, 95);
+            this.LblObjectCount.Location = new System.Drawing.Point(269, 200);
             this.LblObjectCount.Name = "LblObjectCount";
             this.LblObjectCount.Size = new System.Drawing.Size(133, 25);
             this.LblObjectCount.TabIndex = 0;
@@ -52,7 +53,7 @@
             // 
             this.LblDrawerCount.AutoSize = true;
             this.LblDrawerCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDrawerCount.Location = new System.Drawing.Point(185, 263);
+            this.LblDrawerCount.Location = new System.Drawing.Point(445, 319);
             this.LblDrawerCount.Name = "LblDrawerCount";
             this.LblDrawerCount.Size = new System.Drawing.Size(138, 25);
             this.LblDrawerCount.TabIndex = 1;
@@ -61,7 +62,7 @@
             // CboObjectCount
             // 
             this.CboObjectCount.FormattingEnabled = true;
-            this.CboObjectCount.Location = new System.Drawing.Point(190, 95);
+            this.CboObjectCount.Location = new System.Drawing.Point(420, 197);
             this.CboObjectCount.Name = "CboObjectCount";
             this.CboObjectCount.Size = new System.Drawing.Size(77, 28);
             this.CboObjectCount.TabIndex = 2;
@@ -70,7 +71,7 @@
             // CboDrawerCount
             // 
             this.CboDrawerCount.FormattingEnabled = true;
-            this.CboDrawerCount.Location = new System.Drawing.Point(329, 260);
+            this.CboDrawerCount.Location = new System.Drawing.Point(608, 319);
             this.CboDrawerCount.Name = "CboDrawerCount";
             this.CboDrawerCount.Size = new System.Drawing.Size(70, 28);
             this.CboDrawerCount.TabIndex = 3;
@@ -78,7 +79,7 @@
             // 
             // BtnClickToStart
             // 
-            this.BtnClickToStart.Location = new System.Drawing.Point(284, 409);
+            this.BtnClickToStart.Location = new System.Drawing.Point(476, 520);
             this.BtnClickToStart.Name = "BtnClickToStart";
             this.BtnClickToStart.Size = new System.Drawing.Size(215, 51);
             this.BtnClickToStart.TabIndex = 4;
@@ -89,7 +90,7 @@
             // LblSetup
             // 
             this.LblSetup.AutoSize = true;
-            this.LblSetup.Location = new System.Drawing.Point(347, 21);
+            this.LblSetup.Location = new System.Drawing.Point(435, 31);
             this.LblSetup.Name = "LblSetup";
             this.LblSetup.Size = new System.Drawing.Size(62, 20);
             this.LblSetup.TabIndex = 5;
@@ -97,7 +98,7 @@
             // 
             // BtnReset
             // 
-            this.BtnReset.Location = new System.Drawing.Point(284, 409);
+            this.BtnReset.Location = new System.Drawing.Point(476, 520);
             this.BtnReset.Name = "BtnReset";
             this.BtnReset.Size = new System.Drawing.Size(215, 51);
             this.BtnReset.TabIndex = 6;
@@ -106,7 +107,7 @@
             // 
             // BtnNext
             // 
-            this.BtnNext.Location = new System.Drawing.Point(640, 409);
+            this.BtnNext.Location = new System.Drawing.Point(852, 520);
             this.BtnNext.Name = "BtnNext";
             this.BtnNext.Size = new System.Drawing.Size(168, 51);
             this.BtnNext.TabIndex = 7;
@@ -114,11 +115,22 @@
             this.BtnNext.UseVisualStyleBackColor = true;
             this.BtnNext.Click += new System.EventHandler(this.BtnNext_Click);
             // 
+            // BtnGoHome
+            // 
+            this.BtnGoHome.Location = new System.Drawing.Point(153, 520);
+            this.BtnGoHome.Name = "BtnGoHome";
+            this.BtnGoHome.Size = new System.Drawing.Size(170, 51);
+            this.BtnGoHome.TabIndex = 8;
+            this.BtnGoHome.Text = "Home";
+            this.BtnGoHome.UseVisualStyleBackColor = true;
+            this.BtnGoHome.Click += new System.EventHandler(this.BtnGoHome_Click);
+            // 
             // FormIntroduction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 484);
+            this.ClientSize = new System.Drawing.Size(1123, 635);
+            this.Controls.Add(this.BtnGoHome);
             this.Controls.Add(this.BtnNext);
             this.Controls.Add(this.BtnReset);
             this.Controls.Add(this.LblSetup);
@@ -146,5 +158,6 @@
         private System.Windows.Forms.Label LblSetup;
         private System.Windows.Forms.Button BtnReset;
         private System.Windows.Forms.Button BtnNext;
+        private System.Windows.Forms.Button BtnGoHome;
     }
 }
