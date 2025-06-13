@@ -52,7 +52,7 @@ namespace Capstone_Milestone1.Forms
 
         private void FormIntroduction_Load(object sender, EventArgs e)
         {
-            BtnClickToStart.Visible = false;
+            BtnStart.Visible = false;
             BtnReset.Visible = false;
             BtnNext.Visible = false;
             BtnReset.Enabled = false;
@@ -72,7 +72,7 @@ namespace Capstone_Milestone1.Forms
 
                 // Force no initial selection to prevent auto-triggering the event
                 CboDrawerCount.SelectedIndex = -1;
-                BtnClickToStart.Visible = false; // Ensure it's hidden again after changing ObjectCount
+                BtnStart.Visible = false; // Ensure it's hidden again after changing ObjectCount
 
             }
 
@@ -83,7 +83,7 @@ namespace Capstone_Milestone1.Forms
         private void CboDrawerCount_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Make the button visible only when the user actually selects an item
-            BtnClickToStart.Visible = CboDrawerCount.SelectedIndex != -1;
+            BtnStart.Visible = CboDrawerCount.SelectedIndex != -1;
 
             if (CboDrawerCount.SelectedItem != null) 
             {
@@ -97,10 +97,10 @@ namespace Capstone_Milestone1.Forms
 
         }
 
-        private void BtnClickToStart_Click(object sender, EventArgs e)
+        private void BtnStart_Click(object sender, EventArgs e)
         {
             _frmParent.DisplayForm(_frmParent.FrmConsDistAnalysis);
-            BtnClickToStart.Visible = false;
+            BtnStart.Visible = false;
             BtnNext.Visible = true;
             BtnReset.Visible = true;
         }
