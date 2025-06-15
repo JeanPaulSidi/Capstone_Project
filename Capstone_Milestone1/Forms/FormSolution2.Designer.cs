@@ -67,21 +67,23 @@
             // 
             // BtnNext
             // 
-            this.BtnNext.Location = new System.Drawing.Point(1021, 940);
+            this.BtnNext.Location = new System.Drawing.Point(1009, 940);
             this.BtnNext.Name = "BtnNext";
             this.BtnNext.Size = new System.Drawing.Size(140, 45);
             this.BtnNext.TabIndex = 3;
             this.BtnNext.Text = "Next";
             this.BtnNext.UseVisualStyleBackColor = true;
+            this.BtnNext.Click += new System.EventHandler(this.BtnNext_Click);
             // 
             // BtnPrevious
             // 
-            this.BtnPrevious.Location = new System.Drawing.Point(314, 940);
+            this.BtnPrevious.Location = new System.Drawing.Point(332, 935);
             this.BtnPrevious.Name = "BtnPrevious";
             this.BtnPrevious.Size = new System.Drawing.Size(126, 45);
             this.BtnPrevious.TabIndex = 4;
             this.BtnPrevious.Text = "Previous";
             this.BtnPrevious.UseVisualStyleBackColor = true;
+            this.BtnPrevious.Click += new System.EventHandler(this.BtnPrevious_Click);
             // 
             // BtnSetup
             // 
@@ -91,6 +93,7 @@
             this.BtnSetup.TabIndex = 5;
             this.BtnSetup.Text = "Setup";
             this.BtnSetup.UseVisualStyleBackColor = true;
+            this.BtnSetup.Click += new System.EventHandler(this.BtnSetup_Click);
             // 
             // LblDistribution
             // 

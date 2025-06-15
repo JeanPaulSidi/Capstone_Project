@@ -75,6 +75,7 @@
             this.BtnNext.TabIndex = 5;
             this.BtnNext.Text = "Next";
             this.BtnNext.UseVisualStyleBackColor = true;
+            this.BtnNext.Click += new System.EventHandler(this.BtnNext_Click);
             // 
             // BtnGoToSetup
             // 
@@ -114,9 +115,9 @@
             // 
             // BtnGoToSolution
             // 
-            this.BtnGoToSolution.Location = new System.Drawing.Point(942, 858);
+            this.BtnGoToSolution.Location = new System.Drawing.Point(919, 905);
             this.BtnGoToSolution.Name = "BtnGoToSolution";
-            this.BtnGoToSolution.Size = new System.Drawing.Size(136, 41);
+            this.BtnGoToSolution.Size = new System.Drawing.Size(159, 41);
             this.BtnGoToSolution.TabIndex = 11;
             this.BtnGoToSolution.Text = "Go To Solution";
             this.BtnGoToSolution.UseVisualStyleBackColor = true;

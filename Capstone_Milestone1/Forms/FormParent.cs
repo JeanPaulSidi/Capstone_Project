@@ -25,7 +25,9 @@ namespace Capstone_Milestone1.Forms
         private FormIntroduction2 _frmIntroduction2;
         private FormAnalysis2 _frmAnalysis2;
         private FormSolution2 _frmSolution2;
+        private FormSolution3 _frmSolution3;
         private FormHome _frmHome;
+
 
         //Contructor
         public FormParent()
@@ -74,6 +76,10 @@ namespace Capstone_Milestone1.Forms
         {
             get { return _frmSolution2; }
         }
+        public FormSolution3 FrmSolution3 
+        {
+            get { return _frmSolution3; }
+        }
 
         public Panel Pnl 
         {
@@ -92,6 +98,7 @@ namespace Capstone_Milestone1.Forms
             _frmIntroduction2 = new FormIntroduction2(this);
             _frmAnalysis2 = new FormAnalysis2(this);
             _frmSolution2 = new FormSolution2(this);
+            _frmSolution3 = new FormSolution3(this);
             _frmHome = new FormHome(this);
 
             _panel = Panel;
