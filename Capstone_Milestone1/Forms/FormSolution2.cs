@@ -167,6 +167,7 @@ namespace Capstone_Milestone1.Forms
 
         private void BtnClickToVisualize_Click(object sender, EventArgs e)
         {
+
             ResetPictureBoxesAndPanels();
             var randomTuple = _pTuple.GetTuple();
             if (randomTuple != null)
@@ -178,11 +179,13 @@ namespace Capstone_Milestone1.Forms
                 StartDistribution();
                 _distributionCounter++;
                 lblCounter.Text = _distributionCounter.ToString();
+                
             }
             else 
             {
                 MessageBox.Show("No more possible distribution");
             }
+
 
         }
 
@@ -195,6 +198,21 @@ namespace Capstone_Milestone1.Forms
             _drawerCount = _frmParent.FrmIntroduction2.DrawerCount;
             _pTuple = new PTupleGenerator(_drawerCount, _objectCount);
             LblSolution.Text = _pTuple.GetSetCount().ToString();
+        }
+
+        private void BtnNext_Click(object sender, EventArgs e)
+        {
+            _frmParent.DisplayForm(_frmParent.FrmSolution3);
+        }
+
+        private void BtnPrevious_Click(object sender, EventArgs e)
+        {
+            _frmParent.DisplayForm(_frmParent.FrmAnalysis2);
+        }
+
+        private void BtnSetup_Click(object sender, EventArgs e)
+        {
+            _frmParent.DisplayForm(_frmParent.FrmIntroduction2);
         }
     }
 }

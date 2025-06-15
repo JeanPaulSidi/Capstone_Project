@@ -180,6 +180,11 @@ namespace Capstone_Milestone1.Forms
         {
             _frmParent.DisplayForm(_frmParent.FrmHome);
         }
+
+        private void BtnNext_Click(object sender, EventArgs e)
+        {
+            _frmParent.DisplayForm(_frmParent.FrmSolution2);
+        }
     }
 }
 
