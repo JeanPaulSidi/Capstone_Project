@@ -16,6 +16,10 @@ namespace Capstone_Milestone1.Forms
         private FormParent _frmParent;
         private List<string> _lines = new List<string>();
         private List<Image> _images = new List<Image>();
+
+        private int _objectCount;
+        private int _drawerCount;
+
         private int _currentLineIndex = 0;
         private int _currentStep = 1;
 
@@ -125,6 +129,57 @@ namespace Capstone_Milestone1.Forms
             }
         }
 
+        private void FormAnalysis2_Load(object sender, EventArgs e)
+        {
+            BtnNext.Visible = false;
+            BtnGoToSolution.Visible = false;
+            _objectCount = _frmParent.FrmIntroduction2.ObjectCount;
+            _drawerCount = _frmParent.FrmIntroduction2.DrawerCount;
+            LblTitle.Text = ($"Distribution of {_objectCount} objects into {_drawerCount} drawers");
+            CreateStepLines(_objectCount, _drawerCount);
+
+        }
+
+        private void BtnNextStep_Click(object sender, EventArgs e)
+        {
+            switch (_currentStep)
+            {
+                case 1:
+                    AddObjectControls(_objectCount, Fpnl1);
+                    LblSteps.Text += ($"* {_lines[0]} \n\n");
+                    _currentStep++;
+                    break;
+                case 2:
+                    AddDrawerControls(_drawerCount, Fpnl2);
+                    LblSteps.Text += ($"* {_lines[1]} \n\n");
+                    _currentStep++;
+                    break;
+                case 3:
+                    LblSteps.Text += ($"* {_lines[2]} \n\n");
+                    _currentStep++;
+                    BtnNextStep.Enabled = false;
+                    BtnGoToSolution.Visible = true;
+                    break;
+            }
+
+        }
+
+        private void BtnGoToSolution_Click(object sender, EventArgs e)
+        {
+            BtnGoToSolution.Visible = false;
+            _frmParent.DisplayForm(_frmParent.FrmSolution2);
+            BtnNext.Visible = true;
+        }
+
+        private void BtnGoToSetup_Click(object sender, EventArgs e)
+        {
+            _frmParent.DisplayForm(_frmParent.FrmIntroduction2);
+        }
+
+        private void BtnGoHome_Click(object sender, EventArgs e)
+        {
+            _frmParent.DisplayForm(_frmParent.FrmHome);
+        }
     }
 }
 
