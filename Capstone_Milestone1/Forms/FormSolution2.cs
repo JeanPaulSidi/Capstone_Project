@@ -146,6 +146,8 @@ namespace Capstone_Milestone1.Forms
             else
             {
                 distributionTimer.Stop();
+                BtnClickToVisualize.Enabled = true;
+
             }
         }
 
@@ -167,7 +169,7 @@ namespace Capstone_Milestone1.Forms
 
         private void BtnClickToVisualize_Click(object sender, EventArgs e)
         {
-
+            BtnClickToVisualize.Enabled = false;
             ResetPictureBoxesAndPanels();
             var randomTuple = _pTuple.GetTuple();
             if (randomTuple != null)

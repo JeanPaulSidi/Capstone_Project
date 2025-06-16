@@ -15,9 +15,9 @@ namespace Capstone_Milestone1.Forms
         //Instance Variables
         private FormParent _frmParent;
         private const int _objectCountMax = 9;
-        private const int _objectCountMin = 3;
+        private const int _objectCountMin = _drawerCountMax;
         private const int _drawerCountMin = 2;
-        private const int _drawerCountMax = 3;
+        private const int _drawerCountMax = 4;
 
         private int _objectCount = 0;
         private int _drawerCount = 0;
@@ -55,9 +55,9 @@ namespace Capstone_Milestone1.Forms
         private void FormIntroduction2_Load(object sender, EventArgs e)
         {
             BtnStart.Visible = false;
-            BtnReset.Visible = false;
+            //BtnReset.Visible = false;
             BtnNext.Visible = false;
-            BtnReset.Enabled = false;
+            //BtnReset.Enabled = false;
 
             CboObjectCount.DataSource = PopulateComboBox(_objectCountMin, _objectCountMax);
             CboObjectCount.Text = string.Empty;
@@ -86,11 +86,11 @@ namespace Capstone_Milestone1.Forms
             if (CboDrawerCount.SelectedItem != null)
             {
                 _drawerCount = (int)CboDrawerCount.SelectedItem;
-                BtnReset.Enabled = true;
+                //BtnReset.Enabled = true;
             }
             else
             {
-                BtnReset.Enabled = false;
+                //BtnReset.Enabled = false;
             }
 
         }
@@ -100,7 +100,7 @@ namespace Capstone_Milestone1.Forms
             _frmParent.DisplayForm(_frmParent.FrmAnalysis2);
             BtnStart.Visible = false;
             BtnNext.Visible = true;
-            BtnReset.Visible = true;
+            //BtnReset.Visible = true;
         }
 
         private void BtnNext_Click(object sender, EventArgs e)

@@ -38,35 +38,39 @@
             // LblTitle
             // 
             this.LblTitle.AutoSize = true;
+            this.LblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTitle.Location = new System.Drawing.Point(337, 47);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(130, 20);
+            this.LblTitle.Size = new System.Drawing.Size(103, 36);
             this.LblTitle.TabIndex = 0;
-            this.LblTitle.Text = "INTRODUCTION";
+            this.LblTitle.Text = "HOME";
             // 
             // LblInDistinguishable
             // 
             this.LblInDistinguishable.AutoSize = true;
-            this.LblInDistinguishable.Location = new System.Drawing.Point(48, 303);
+            this.LblInDistinguishable.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblInDistinguishable.Location = new System.Drawing.Point(197, 303);
             this.LblInDistinguishable.Name = "LblInDistinguishable";
-            this.LblInDistinguishable.Size = new System.Drawing.Size(239, 20);
+            this.LblInDistinguishable.Size = new System.Drawing.Size(451, 36);
             this.LblInDistinguishable.TabIndex = 1;
             this.LblInDistinguishable.Text = "The objects are indistinguishable";
             // 
             // LblDistinguishable
             // 
             this.LblDistinguishable.AutoSize = true;
-            this.LblDistinguishable.Location = new System.Drawing.Point(173, 443);
+            this.LblDistinguishable.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDistinguishable.Location = new System.Drawing.Point(59, 450);
             this.LblDistinguishable.Name = "LblDistinguishable";
-            this.LblDistinguishable.Size = new System.Drawing.Size(227, 20);
+            this.LblDistinguishable.Size = new System.Drawing.Size(427, 36);
             this.LblDistinguishable.TabIndex = 2;
             this.LblDistinguishable.Text = "The objects are distinguishable";
             // 
             // BtnSelectIndistinguishable
             // 
-            this.BtnSelectIndistinguishable.Location = new System.Drawing.Point(329, 295);
+            this.BtnSelectIndistinguishable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSelectIndistinguishable.Location = new System.Drawing.Point(666, 290);
             this.BtnSelectIndistinguishable.Name = "BtnSelectIndistinguishable";
-            this.BtnSelectIndistinguishable.Size = new System.Drawing.Size(156, 36);
+            this.BtnSelectIndistinguishable.Size = new System.Drawing.Size(156, 49);
             this.BtnSelectIndistinguishable.TabIndex = 3;
             this.BtnSelectIndistinguishable.Text = "Select";
             this.BtnSelectIndistinguishable.UseVisualStyleBackColor = true;
@@ -74,9 +78,10 @@
             // 
             // BtnSelectDistinguishable
             // 
-            this.BtnSelectDistinguishable.Location = new System.Drawing.Point(445, 435);
+            this.BtnSelectDistinguishable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSelectDistinguishable.Location = new System.Drawing.Point(498, 445);
             this.BtnSelectDistinguishable.Name = "BtnSelectDistinguishable";
-            this.BtnSelectDistinguishable.Size = new System.Drawing.Size(150, 39);
+            this.BtnSelectDistinguishable.Size = new System.Drawing.Size(150, 51);
             this.BtnSelectDistinguishable.TabIndex = 4;
             this.BtnSelectDistinguishable.Text = "Select";
             this.BtnSelectDistinguishable.UseVisualStyleBackColor = true;
@@ -86,7 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(863, 563);
+            this.ClientSize = new System.Drawing.Size(953, 563);
             this.Controls.Add(this.BtnSelectDistinguishable);
             this.Controls.Add(this.BtnSelectIndistinguishable);
             this.Controls.Add(this.LblDistinguishable);

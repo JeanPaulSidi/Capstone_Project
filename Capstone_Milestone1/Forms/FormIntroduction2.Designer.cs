@@ -34,7 +34,6 @@
             this.LblDrawerCount = new System.Windows.Forms.Label();
             this.CboDrawerCount = new System.Windows.Forms.ComboBox();
             this.BtnGoHome = new System.Windows.Forms.Button();
-            this.BtnReset = new System.Windows.Forms.Button();
             this.BtnNext = new System.Windows.Forms.Button();
             this.BtnStart = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -42,52 +41,56 @@
             // LblSetup
             // 
             this.LblSetup.AutoSize = true;
+            this.LblSetup.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblSetup.Location = new System.Drawing.Point(508, 59);
             this.LblSetup.Name = "LblSetup";
-            this.LblSetup.Size = new System.Drawing.Size(62, 20);
+            this.LblSetup.Size = new System.Drawing.Size(115, 36);
             this.LblSetup.TabIndex = 0;
             this.LblSetup.Text = "SETUP";
             // 
             // LblObjectCount
             // 
             this.LblObjectCount.AutoSize = true;
-            this.LblObjectCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblObjectCount.Location = new System.Drawing.Point(247, 209);
+            this.LblObjectCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblObjectCount.Location = new System.Drawing.Point(246, 209);
             this.LblObjectCount.Name = "LblObjectCount";
-            this.LblObjectCount.Size = new System.Drawing.Size(133, 25);
+            this.LblObjectCount.Size = new System.Drawing.Size(196, 36);
             this.LblObjectCount.TabIndex = 1;
             this.LblObjectCount.Text = "Object Count:";
             // 
             // CboObjectCount
             // 
+            this.CboObjectCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CboObjectCount.FormattingEnabled = true;
-            this.CboObjectCount.Location = new System.Drawing.Point(397, 209);
+            this.CboObjectCount.Location = new System.Drawing.Point(456, 207);
             this.CboObjectCount.Name = "CboObjectCount";
-            this.CboObjectCount.Size = new System.Drawing.Size(84, 28);
+            this.CboObjectCount.Size = new System.Drawing.Size(84, 38);
             this.CboObjectCount.TabIndex = 2;
             this.CboObjectCount.SelectedIndexChanged += new System.EventHandler(this.CboObjectCount_SelectedIndexChanged);
             // 
             // LblDrawerCount
             // 
             this.LblDrawerCount.AutoSize = true;
-            this.LblDrawerCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDrawerCount.Location = new System.Drawing.Point(451, 325);
+            this.LblDrawerCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDrawerCount.Location = new System.Drawing.Point(379, 327);
             this.LblDrawerCount.Name = "LblDrawerCount";
-            this.LblDrawerCount.Size = new System.Drawing.Size(138, 25);
+            this.LblDrawerCount.Size = new System.Drawing.Size(206, 36);
             this.LblDrawerCount.TabIndex = 3;
             this.LblDrawerCount.Text = "Drawer Count:";
             // 
             // CboDrawerCount
             // 
+            this.CboDrawerCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CboDrawerCount.FormattingEnabled = true;
             this.CboDrawerCount.Location = new System.Drawing.Point(606, 325);
             this.CboDrawerCount.Name = "CboDrawerCount";
-            this.CboDrawerCount.Size = new System.Drawing.Size(86, 28);
+            this.CboDrawerCount.Size = new System.Drawing.Size(86, 38);
             this.CboDrawerCount.TabIndex = 4;
             this.CboDrawerCount.SelectedIndexChanged += new System.EventHandler(this.CboDrawerCount_SelectedIndexChanged);
             // 
             // BtnGoHome
             // 
+            this.BtnGoHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGoHome.Location = new System.Drawing.Point(117, 550);
             this.BtnGoHome.Name = "BtnGoHome";
             this.BtnGoHome.Size = new System.Drawing.Size(137, 45);
@@ -96,18 +99,10 @@
             this.BtnGoHome.UseVisualStyleBackColor = true;
             this.BtnGoHome.Click += new System.EventHandler(this.BtnGoHome_Click);
             // 
-            // BtnReset
-            // 
-            this.BtnReset.Location = new System.Drawing.Point(456, 550);
-            this.BtnReset.Name = "BtnReset";
-            this.BtnReset.Size = new System.Drawing.Size(164, 45);
-            this.BtnReset.TabIndex = 6;
-            this.BtnReset.Text = "Reset";
-            this.BtnReset.UseVisualStyleBackColor = true;
-            // 
             // BtnNext
             // 
-            this.BtnNext.Location = new System.Drawing.Point(813, 550);
+            this.BtnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNext.Location = new System.Drawing.Point(901, 550);
             this.BtnNext.Name = "BtnNext";
             this.BtnNext.Size = new System.Drawing.Size(124, 45);
             this.BtnNext.TabIndex = 7;
@@ -117,7 +112,8 @@
             // 
             // BtnStart
             // 
-            this.BtnStart.Location = new System.Drawing.Point(456, 550);
+            this.BtnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnStart.Location = new System.Drawing.Point(555, 550);
             this.BtnStart.Name = "BtnStart";
             this.BtnStart.Size = new System.Drawing.Size(164, 45);
             this.BtnStart.TabIndex = 8;
@@ -132,7 +128,6 @@
             this.ClientSize = new System.Drawing.Size(1123, 646);
             this.Controls.Add(this.BtnStart);
             this.Controls.Add(this.BtnNext);
-            this.Controls.Add(this.BtnReset);
             this.Controls.Add(this.BtnGoHome);
             this.Controls.Add(this.CboDrawerCount);
             this.Controls.Add(this.LblDrawerCount);
@@ -156,7 +151,6 @@
         private System.Windows.Forms.Label LblDrawerCount;
         private System.Windows.Forms.ComboBox CboDrawerCount;
         private System.Windows.Forms.Button BtnGoHome;
-        private System.Windows.Forms.Button BtnReset;
         private System.Windows.Forms.Button BtnNext;
         private System.Windows.Forms.Button BtnStart;
     }
