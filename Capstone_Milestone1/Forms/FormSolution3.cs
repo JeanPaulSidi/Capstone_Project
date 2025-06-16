@@ -165,6 +165,7 @@ namespace Capstone_Milestone1.Forms
             else
             {
                 distributionTimer.Stop();
+                BtnVisualize.Enabled = true;
             }
         }
 
@@ -193,9 +194,11 @@ namespace Capstone_Milestone1.Forms
 
         private void BtnVisualize_Click(object sender, EventArgs e)
         {
+            BtnVisualize.Enabled = false;
+
             ResetPictureBoxesAndPanels();
 
-            if (DistributionCounter == 10)
+            if (DistributionCounter == 2)
             {
                 preAssignedIndices.Clear();
                 preAssignedIndices.AddRange(new List<int> { 1, 3, 5 });
@@ -221,13 +224,20 @@ namespace Capstone_Milestone1.Forms
 
         private void FormSolution3_Load(object sender, EventArgs e)
         {
-            LblTitle.Text += ("Distributing 9 distinct objects into 3 labeled drawers.");
-            LblTitle.Text += ("drawers cannot be empty");
+            LblTitle.Text += ("Distributing 9 distinct objects into 3 drawers.");
+            LblTitle.Text += (" drawers cannot be empty. ");
+            LblTitle.Text += ($"Result: (9 X 8 X 7) X (3^6)  = ");
+            LblTitle.Text += ($" ({9 * 8 * 7}) X ({3 * 3 * 3 * 3 * 3 * 3})");
         }
 
         private void BtnPrevious_Click(object sender, EventArgs e)
         {
             _frmParent.DisplayForm(_frmParent.FrmSolution2);
+        }
+
+        private void BtnHome_Click(object sender, EventArgs e)
+        {
+            _frmParent.DisplayForm(_frmParent.FrmHome);
         }
     }
 }

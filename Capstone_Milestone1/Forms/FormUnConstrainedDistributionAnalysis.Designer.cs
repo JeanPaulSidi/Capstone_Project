@@ -40,9 +40,10 @@
             // LblTitle
             // 
             this.LblTitle.AutoSize = true;
+            this.LblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTitle.Location = new System.Drawing.Point(142, 13);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(0, 20);
+            this.LblTitle.Size = new System.Drawing.Size(0, 36);
             this.LblTitle.TabIndex = 0;
             // 
             // Fpnl
@@ -56,14 +57,16 @@
             // LblSteps
             // 
             this.LblSteps.AutoSize = true;
+            this.LblSteps.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblSteps.Location = new System.Drawing.Point(215, 356);
             this.LblSteps.Name = "LblSteps";
-            this.LblSteps.Size = new System.Drawing.Size(0, 20);
+            this.LblSteps.Size = new System.Drawing.Size(0, 36);
             this.LblSteps.TabIndex = 2;
             // 
             // BtnPrevious
             // 
-            this.BtnPrevious.Location = new System.Drawing.Point(163, 621);
+            this.BtnPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPrevious.Location = new System.Drawing.Point(194, 697);
             this.BtnPrevious.Name = "BtnPrevious";
             this.BtnPrevious.Size = new System.Drawing.Size(139, 55);
             this.BtnPrevious.TabIndex = 3;
@@ -73,9 +76,10 @@
             // 
             // BtnNextStep
             // 
-            this.BtnNextStep.Location = new System.Drawing.Point(531, 625);
+            this.BtnNextStep.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNextStep.Location = new System.Drawing.Point(548, 697);
             this.BtnNextStep.Name = "BtnNextStep";
-            this.BtnNextStep.Size = new System.Drawing.Size(153, 51);
+            this.BtnNextStep.Size = new System.Drawing.Size(178, 51);
             this.BtnNextStep.TabIndex = 4;
             this.BtnNextStep.Text = "Next Step";
             this.BtnNextStep.UseVisualStyleBackColor = true;
@@ -83,7 +87,7 @@
             // 
             // BtnGoToSolution
             // 
-            this.BtnGoToSolution.Location = new System.Drawing.Point(883, 625);
+            this.BtnGoToSolution.Location = new System.Drawing.Point(893, 699);
             this.BtnGoToSolution.Name = "BtnGoToSolution";
             this.BtnGoToSolution.Size = new System.Drawing.Size(177, 51);
             this.BtnGoToSolution.TabIndex = 5;
@@ -93,7 +97,8 @@
             // 
             // BtnNext
             // 
-            this.BtnNext.Location = new System.Drawing.Point(883, 625);
+            this.BtnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNext.Location = new System.Drawing.Point(893, 699);
             this.BtnNext.Name = "BtnNext";
             this.BtnNext.Size = new System.Drawing.Size(177, 51);
             this.BtnNext.TabIndex = 6;
@@ -105,7 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1205, 700);
+            this.ClientSize = new System.Drawing.Size(1205, 793);
             this.Controls.Add(this.BtnNext);
             this.Controls.Add(this.BtnGoToSolution);
             this.Controls.Add(this.BtnNextStep);

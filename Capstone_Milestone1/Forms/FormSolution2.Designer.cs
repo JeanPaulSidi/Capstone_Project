@@ -41,25 +41,28 @@
             // LblTitle
             // 
             this.LblTitle.AutoSize = true;
+            this.LblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTitle.Location = new System.Drawing.Point(224, 23);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(71, 20);
+            this.LblTitle.Size = new System.Drawing.Size(133, 36);
             this.LblTitle.TabIndex = 0;
             this.LblTitle.Text = "Solution:";
             // 
             // LblSolution
             // 
             this.LblSolution.AutoSize = true;
-            this.LblSolution.Location = new System.Drawing.Point(310, 23);
+            this.LblSolution.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSolution.Location = new System.Drawing.Point(369, 23);
             this.LblSolution.Name = "LblSolution";
-            this.LblSolution.Size = new System.Drawing.Size(0, 20);
+            this.LblSolution.Size = new System.Drawing.Size(0, 36);
             this.LblSolution.TabIndex = 1;
             // 
             // BtnClickToVisualize
             // 
+            this.BtnClickToVisualize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnClickToVisualize.Location = new System.Drawing.Point(589, 940);
             this.BtnClickToVisualize.Name = "BtnClickToVisualize";
-            this.BtnClickToVisualize.Size = new System.Drawing.Size(169, 45);
+            this.BtnClickToVisualize.Size = new System.Drawing.Size(246, 45);
             this.BtnClickToVisualize.TabIndex = 2;
             this.BtnClickToVisualize.Text = "Click To Visualize";
             this.BtnClickToVisualize.UseVisualStyleBackColor = true;
@@ -67,6 +70,7 @@
             // 
             // BtnNext
             // 
+            this.BtnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNext.Location = new System.Drawing.Point(1009, 940);
             this.BtnNext.Name = "BtnNext";
             this.BtnNext.Size = new System.Drawing.Size(140, 45);
@@ -77,6 +81,7 @@
             // 
             // BtnPrevious
             // 
+            this.BtnPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPrevious.Location = new System.Drawing.Point(332, 935);
             this.BtnPrevious.Name = "BtnPrevious";
             this.BtnPrevious.Size = new System.Drawing.Size(126, 45);
@@ -87,6 +92,7 @@
             // 
             // BtnSetup
             // 
+            this.BtnSetup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSetup.Location = new System.Drawing.Point(105, 935);
             this.BtnSetup.Name = "BtnSetup";
             this.BtnSetup.Size = new System.Drawing.Size(118, 55);
@@ -98,18 +104,20 @@
             // LblDistribution
             // 
             this.LblDistribution.AutoSize = true;
-            this.LblDistribution.Location = new System.Drawing.Point(517, 863);
+            this.LblDistribution.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDistribution.Location = new System.Drawing.Point(335, 863);
             this.LblDistribution.Name = "LblDistribution";
-            this.LblDistribution.Size = new System.Drawing.Size(154, 20);
+            this.LblDistribution.Size = new System.Drawing.Size(288, 36);
             this.LblDistribution.TabIndex = 6;
             this.LblDistribution.Text = "Distribution Counter:";
             // 
             // lblCounter
             // 
             this.lblCounter.AutoSize = true;
-            this.lblCounter.Location = new System.Drawing.Point(677, 863);
+            this.lblCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCounter.Location = new System.Drawing.Point(629, 863);
             this.lblCounter.Name = "lblCounter";
-            this.lblCounter.Size = new System.Drawing.Size(0, 20);
+            this.lblCounter.Size = new System.Drawing.Size(0, 36);
             this.lblCounter.TabIndex = 7;
             // 
             // FormSolution2

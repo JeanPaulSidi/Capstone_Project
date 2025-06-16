@@ -40,11 +40,11 @@
             // LblTitle
             // 
             this.LblTitle.AutoSize = true;
+            this.LblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTitle.Location = new System.Drawing.Point(142, 22);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(51, 20);
+            this.LblTitle.Size = new System.Drawing.Size(0, 36);
             this.LblTitle.TabIndex = 0;
-            this.LblTitle.Text = "label1";
             // 
             // Fpnl
             // 
@@ -56,7 +56,7 @@
             // 
             // BtnGoToSolution
             // 
-            this.BtnGoToSolution.Location = new System.Drawing.Point(771, 609);
+            this.BtnGoToSolution.Location = new System.Drawing.Point(801, 709);
             this.BtnGoToSolution.Name = "BtnGoToSolution";
             this.BtnGoToSolution.Size = new System.Drawing.Size(143, 44);
             this.BtnGoToSolution.TabIndex = 4;
@@ -66,9 +66,10 @@
             // 
             // BtnNextStep
             // 
-            this.BtnNextStep.Location = new System.Drawing.Point(453, 609);
+            this.BtnNextStep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNextStep.Location = new System.Drawing.Point(472, 714);
             this.BtnNextStep.Name = "BtnNextStep";
-            this.BtnNextStep.Size = new System.Drawing.Size(135, 44);
+            this.BtnNextStep.Size = new System.Drawing.Size(155, 44);
             this.BtnNextStep.TabIndex = 5;
             this.BtnNextStep.Text = "Next Step";
             this.BtnNextStep.UseVisualStyleBackColor = true;
@@ -77,14 +78,16 @@
             // LblSteps
             // 
             this.LblSteps.AutoSize = true;
+            this.LblSteps.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblSteps.Location = new System.Drawing.Point(146, 385);
             this.LblSteps.Name = "LblSteps";
-            this.LblSteps.Size = new System.Drawing.Size(0, 20);
+            this.LblSteps.Size = new System.Drawing.Size(0, 36);
             this.LblSteps.TabIndex = 7;
             // 
             // BtnNext
             // 
-            this.BtnNext.Location = new System.Drawing.Point(771, 609);
+            this.BtnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNext.Location = new System.Drawing.Point(801, 709);
             this.BtnNext.Name = "BtnNext";
             this.BtnNext.Size = new System.Drawing.Size(143, 44);
             this.BtnNext.TabIndex = 8;
@@ -94,11 +97,12 @@
             // 
             // BtnGoToSetup
             // 
-            this.BtnGoToSetup.Location = new System.Drawing.Point(160, 609);
+            this.BtnGoToSetup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGoToSetup.Location = new System.Drawing.Point(148, 709);
             this.BtnGoToSetup.Name = "BtnGoToSetup";
-            this.BtnGoToSetup.Size = new System.Drawing.Size(117, 54);
+            this.BtnGoToSetup.Size = new System.Drawing.Size(175, 54);
             this.BtnGoToSetup.TabIndex = 9;
-            this.BtnGoToSetup.Text = "Go To Setup";
+            this.BtnGoToSetup.Text = "Setup";
             this.BtnGoToSetup.UseVisualStyleBackColor = true;
             this.BtnGoToSetup.Click += new System.EventHandler(this.BtnGoToSetup_Click);
             // 

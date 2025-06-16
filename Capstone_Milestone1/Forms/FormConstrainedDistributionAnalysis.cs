@@ -102,6 +102,7 @@ namespace Capstone_Milestone1.Forms
         {
             BtnNext.Visible = false;
             LblTitle.Text = ($"Distribution of {_frmParent.FrmIntro.ObjectCount} objects into {_frmParent.FrmIntro.DrawerCount} drawers.");
+            LblTitle.Text += ($"  No drawer can be empty");
             Fpnl.Visible = false;
             AddObjectControls(_frmParent.FrmIntro.ObjectCount);
             CreateStepLines(_frmParent.FrmIntro.ObjectCount, _frmParent.FrmIntro.DrawerCount);

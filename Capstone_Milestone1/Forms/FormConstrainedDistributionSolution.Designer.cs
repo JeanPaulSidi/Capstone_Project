@@ -44,9 +44,10 @@
             // LblTitle
             // 
             this.LblTitle.AutoSize = true;
-            this.LblTitle.Location = new System.Drawing.Point(228, 13);
+            this.LblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTitle.Location = new System.Drawing.Point(139, 13);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(71, 20);
+            this.LblTitle.Size = new System.Drawing.Size(133, 36);
             this.LblTitle.TabIndex = 0;
             this.LblTitle.Text = "Solution:";
             // 
@@ -60,18 +61,20 @@
             // LblDistributionCount
             // 
             this.LblDistributionCount.AutoSize = true;
-            this.LblDistributionCount.Location = new System.Drawing.Point(51, 387);
+            this.LblDistributionCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDistributionCount.Location = new System.Drawing.Point(31, 360);
             this.LblDistributionCount.Name = "LblDistributionCount";
-            this.LblDistributionCount.Size = new System.Drawing.Size(154, 20);
+            this.LblDistributionCount.Size = new System.Drawing.Size(288, 36);
             this.LblDistributionCount.TabIndex = 2;
             this.LblDistributionCount.Text = "Distribution Counter:";
             // 
             // LblDistribution
             // 
             this.LblDistribution.AutoSize = true;
-            this.LblDistribution.Location = new System.Drawing.Point(55, 438);
+            this.LblDistribution.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDistribution.Location = new System.Drawing.Point(80, 429);
             this.LblDistribution.Name = "LblDistribution";
-            this.LblDistribution.Size = new System.Drawing.Size(93, 20);
+            this.LblDistribution.Size = new System.Drawing.Size(174, 36);
             this.LblDistribution.TabIndex = 3;
             this.LblDistribution.Text = "Distribution:";
             // 
@@ -84,9 +87,10 @@
             // 
             // BtnVisualisation
             // 
-            this.BtnVisualisation.Location = new System.Drawing.Point(519, 876);
+            this.BtnVisualisation.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVisualisation.Location = new System.Drawing.Point(504, 876);
             this.BtnVisualisation.Name = "BtnVisualisation";
-            this.BtnVisualisation.Size = new System.Drawing.Size(163, 46);
+            this.BtnVisualisation.Size = new System.Drawing.Size(244, 46);
             this.BtnVisualisation.TabIndex = 5;
             this.BtnVisualisation.Text = "Click To Visualize";
             this.BtnVisualisation.UseVisualStyleBackColor = true;
@@ -94,6 +98,7 @@
             // 
             // BtnNext
             // 
+            this.BtnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNext.Location = new System.Drawing.Point(862, 876);
             this.BtnNext.Name = "BtnNext";
             this.BtnNext.Size = new System.Drawing.Size(133, 46);
@@ -104,6 +109,7 @@
             // 
             // BtnPrevious
             // 
+            this.BtnPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPrevious.Location = new System.Drawing.Point(204, 876);
             this.BtnPrevious.Name = "BtnPrevious";
             this.BtnPrevious.Size = new System.Drawing.Size(132, 46);
@@ -115,32 +121,35 @@
             // LblDistributionCounter
             // 
             this.LblDistributionCounter.AutoSize = true;
-            this.LblDistributionCounter.Location = new System.Drawing.Point(198, 387);
+            this.LblDistributionCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDistributionCounter.Location = new System.Drawing.Point(346, 360);
             this.LblDistributionCounter.Name = "LblDistributionCounter";
-            this.LblDistributionCounter.Size = new System.Drawing.Size(0, 20);
+            this.LblDistributionCounter.Size = new System.Drawing.Size(0, 36);
             this.LblDistributionCounter.TabIndex = 8;
             // 
             // LblSolution
             // 
             this.LblSolution.AutoSize = true;
-            this.LblSolution.Location = new System.Drawing.Point(306, 13);
+            this.LblSolution.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSolution.Location = new System.Drawing.Point(287, 13);
             this.LblSolution.Name = "LblSolution";
-            this.LblSolution.Size = new System.Drawing.Size(0, 20);
+            this.LblSolution.Size = new System.Drawing.Size(0, 36);
             this.LblSolution.TabIndex = 9;
             // 
             // LblDristributionDetails
             // 
             this.LblDristributionDetails.AutoSize = true;
-            this.LblDristributionDetails.Location = new System.Drawing.Point(202, 438);
+            this.LblDristributionDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDristributionDetails.Location = new System.Drawing.Point(306, 429);
             this.LblDristributionDetails.Name = "LblDristributionDetails";
-            this.LblDristributionDetails.Size = new System.Drawing.Size(0, 20);
+            this.LblDristributionDetails.Size = new System.Drawing.Size(0, 36);
             this.LblDristributionDetails.TabIndex = 10;
             // 
             // FormConstrainedDistributionSolution
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1216, 946);
+            this.ClientSize = new System.Drawing.Size(1216, 965);
             this.Controls.Add(this.LblDristributionDetails);
             this.Controls.Add(this.LblSolution);
             this.Controls.Add(this.LblDistributionCounter);

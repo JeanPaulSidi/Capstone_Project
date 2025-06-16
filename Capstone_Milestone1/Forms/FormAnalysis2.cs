@@ -51,8 +51,8 @@ namespace Capstone_Milestone1.Forms
         private void CreateStepLines(int ObjectCount, int DrawerCount)
         {
             string Line1 = ($"Let's consider the {ObjectCount} objects");
-            string Line2 = ($"Let's consider the {ObjectCount - 1} separation bar(s) between the objects");
-            string Line3 = ($"To achieve such a distribution, we have to choose {DrawerCount - 1} bar(s) from the {ObjectCount - 1} separation bar(s).");
+            string Line2 = ($"Let's consider the {DrawerCount} drawers");
+            string Line3 = ($"To achieve such a distribution, we have to decide for each object, which of the {DrawerCount} drawers it will go into.");
 
             _lines.Add(Line1);
             _lines.Add(Line2);
@@ -135,7 +135,7 @@ namespace Capstone_Milestone1.Forms
             BtnGoToSolution.Visible = false;
             _objectCount = _frmParent.FrmIntroduction2.ObjectCount;
             _drawerCount = _frmParent.FrmIntroduction2.DrawerCount;
-            LblTitle.Text = ($"Distribution of {_objectCount} objects into {_drawerCount} drawers");
+            LblTitle.Text += ($"Distribution of {_objectCount} objects into {_drawerCount} drawers");
             CreateStepLines(_objectCount, _drawerCount);
 
         }

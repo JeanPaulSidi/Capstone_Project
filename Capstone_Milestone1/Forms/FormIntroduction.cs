@@ -53,9 +53,9 @@ namespace Capstone_Milestone1.Forms
         private void FormIntroduction_Load(object sender, EventArgs e)
         {
             BtnStart.Visible = false;
-            BtnReset.Visible = false;
+            //BtnReset.Visible = false;
             BtnNext.Visible = false;
-            BtnReset.Enabled = false;
+            //BtnReset.Enabled = false;
 
 
             CboObjectCount.DataSource = PopulateComboBox(_objectCountMin, _objectCountMax);
@@ -88,11 +88,11 @@ namespace Capstone_Milestone1.Forms
             if (CboDrawerCount.SelectedItem != null) 
             {
                 _drawerCount = (int)CboDrawerCount.SelectedItem;
-                BtnReset.Enabled = true;
+                //BtnReset.Enabled = true;
             }
             else 
             {
-                BtnReset.Enabled = false;
+                //BtnReset.Enabled = false;
             }
 
         }
@@ -102,7 +102,7 @@ namespace Capstone_Milestone1.Forms
             _frmParent.DisplayForm(_frmParent.FrmConsDistAnalysis);
             BtnStart.Visible = false;
             BtnNext.Visible = true;
-            BtnReset.Visible = true;
+            //BtnReset.Visible = true;
         }
 
         private void BtnNext_Click(object sender, EventArgs e)

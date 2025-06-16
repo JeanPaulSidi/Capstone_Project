@@ -36,67 +36,73 @@
             this.LblDistributionDetails = new System.Windows.Forms.Label();
             this.BtnVisualisation = new System.Windows.Forms.Button();
             this.BtnPrevious = new System.Windows.Forms.Button();
-            this.BtnNext = new System.Windows.Forms.Button();
+            this.BtnHome = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // LblTitle
             // 
             this.LblTitle.AutoSize = true;
-            this.LblTitle.Location = new System.Drawing.Point(125, 13);
+            this.LblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTitle.Location = new System.Drawing.Point(113, 26);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(71, 20);
+            this.LblTitle.Size = new System.Drawing.Size(133, 36);
             this.LblTitle.TabIndex = 0;
             this.LblTitle.Text = "Solution:";
             // 
             // LblSolution
             // 
             this.LblSolution.AutoSize = true;
-            this.LblSolution.Location = new System.Drawing.Point(191, 13);
+            this.LblSolution.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSolution.Location = new System.Drawing.Point(273, 26);
             this.LblSolution.Name = "LblSolution";
-            this.LblSolution.Size = new System.Drawing.Size(51, 20);
+            this.LblSolution.Size = new System.Drawing.Size(0, 36);
             this.LblSolution.TabIndex = 1;
-            this.LblSolution.Text = "label1";
             // 
             // LblDistributionCounter
             // 
             this.LblDistributionCounter.AutoSize = true;
-            this.LblDistributionCounter.Location = new System.Drawing.Point(58, 528);
+            this.LblDistributionCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDistributionCounter.Location = new System.Drawing.Point(37, 480);
             this.LblDistributionCounter.Name = "LblDistributionCounter";
-            this.LblDistributionCounter.Size = new System.Drawing.Size(137, 20);
+            this.LblDistributionCounter.Size = new System.Drawing.Size(282, 36);
             this.LblDistributionCounter.TabIndex = 2;
-            this.LblDistributionCounter.Text = "Distribution count:";
+            this.LblDistributionCounter.Text = "Distribution counter:";
             // 
             // LblDistributionCount
             // 
             this.LblDistributionCount.AutoSize = true;
-            this.LblDistributionCount.Location = new System.Drawing.Point(214, 528);
+            this.LblDistributionCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDistributionCount.Location = new System.Drawing.Point(346, 480);
             this.LblDistributionCount.Name = "LblDistributionCount";
-            this.LblDistributionCount.Size = new System.Drawing.Size(0, 20);
+            this.LblDistributionCount.Size = new System.Drawing.Size(0, 36);
             this.LblDistributionCount.TabIndex = 3;
             // 
             // LblDistribution
             // 
             this.LblDistribution.AutoSize = true;
-            this.LblDistribution.Location = new System.Drawing.Point(58, 601);
+            this.LblDistribution.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDistribution.Location = new System.Drawing.Point(79, 546);
             this.LblDistribution.Name = "LblDistribution";
-            this.LblDistribution.Size = new System.Drawing.Size(93, 20);
+            this.LblDistribution.Size = new System.Drawing.Size(174, 36);
             this.LblDistribution.TabIndex = 4;
             this.LblDistribution.Text = "Distribution:";
             // 
             // LblDistributionDetails
             // 
             this.LblDistributionDetails.AutoSize = true;
-            this.LblDistributionDetails.Location = new System.Drawing.Point(180, 601);
+            this.LblDistributionDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDistributionDetails.Location = new System.Drawing.Point(273, 546);
             this.LblDistributionDetails.Name = "LblDistributionDetails";
-            this.LblDistributionDetails.Size = new System.Drawing.Size(0, 20);
+            this.LblDistributionDetails.Size = new System.Drawing.Size(0, 36);
             this.LblDistributionDetails.TabIndex = 5;
             // 
             // BtnVisualisation
             // 
-            this.BtnVisualisation.Location = new System.Drawing.Point(729, 879);
+            this.BtnVisualisation.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVisualisation.Location = new System.Drawing.Point(564, 875);
             this.BtnVisualisation.Name = "BtnVisualisation";
-            this.BtnVisualisation.Size = new System.Drawing.Size(145, 50);
+            this.BtnVisualisation.Size = new System.Drawing.Size(281, 50);
             this.BtnVisualisation.TabIndex = 6;
             this.BtnVisualisation.Text = "Click to Visualize";
             this.BtnVisualisation.UseVisualStyleBackColor = true;
@@ -104,22 +110,25 @@
             // 
             // BtnPrevious
             // 
-            this.BtnPrevious.Location = new System.Drawing.Point(476, 879);
+            this.BtnPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPrevious.Location = new System.Drawing.Point(326, 879);
             this.BtnPrevious.Name = "BtnPrevious";
-            this.BtnPrevious.Size = new System.Drawing.Size(112, 50);
+            this.BtnPrevious.Size = new System.Drawing.Size(139, 50);
             this.BtnPrevious.TabIndex = 7;
             this.BtnPrevious.Text = "Previous";
             this.BtnPrevious.UseVisualStyleBackColor = true;
             this.BtnPrevious.Click += new System.EventHandler(this.BtnPrevious_Click);
             // 
-            // BtnNext
+            // BtnHome
             // 
-            this.BtnNext.Location = new System.Drawing.Point(1037, 879);
-            this.BtnNext.Name = "BtnNext";
-            this.BtnNext.Size = new System.Drawing.Size(103, 50);
-            this.BtnNext.TabIndex = 8;
-            this.BtnNext.Text = "Next";
-            this.BtnNext.UseVisualStyleBackColor = true;
+            this.BtnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnHome.Location = new System.Drawing.Point(977, 875);
+            this.BtnHome.Name = "BtnHome";
+            this.BtnHome.Size = new System.Drawing.Size(119, 50);
+            this.BtnHome.TabIndex = 8;
+            this.BtnHome.Text = "Home";
+            this.BtnHome.UseVisualStyleBackColor = true;
+            this.BtnHome.Click += new System.EventHandler(this.BtnHome_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -135,7 +144,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1338, 966);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.BtnNext);
+            this.Controls.Add(this.BtnHome);
             this.Controls.Add(this.BtnPrevious);
             this.Controls.Add(this.BtnVisualisation);
             this.Controls.Add(this.LblDistributionDetails);
@@ -163,7 +172,7 @@
         private System.Windows.Forms.Label LblDistributionDetails;
         private System.Windows.Forms.Button BtnVisualisation;
         private System.Windows.Forms.Button BtnPrevious;
-        private System.Windows.Forms.Button BtnNext;
+        private System.Windows.Forms.Button BtnHome;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
